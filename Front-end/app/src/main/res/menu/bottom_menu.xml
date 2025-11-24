@@ -3,5 +3,8 @@
     <item
         android:id="@+id/home"
         android:title="home"/>
+    <item
+        android:id="@+id/areaUtente"
+        android:title="area utente"/>
 
 </menu>
