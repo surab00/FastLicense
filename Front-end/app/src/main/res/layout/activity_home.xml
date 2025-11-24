@@ -13,16 +13,6 @@
         tools:layout_editor_absoluteX="-54dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="208dp"
-            android:layout_height="58dp"
-            android:fontFamily="cursive"
-            android:text="Fast licence"
-            android:textColor="#3F51B5"
-            android:textSize="50dp"
-            tools:layout_editor_absoluteX="115dp"
-            tools:layout_editor_absoluteY="34dp" />
 
         <View
             android:id="@+id/cerchio"
