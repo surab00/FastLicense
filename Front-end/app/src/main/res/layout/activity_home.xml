@@ -7,17 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-<GridLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:columnCount="2"
-    android:rowCount="2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-54dp"
+        tools:layout_editor_absoluteY="0dp">
 
 
+        <View
+            android:id="@+id/cerchio"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/cerchio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
 
+        <View
+            android:id="@+id/triangolo"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/triangolo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cerchio"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <View
+            android:id="@+id/quadrato"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/quadrato"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toEndOf="@+id/rombo"
+            app:layout_constraintTop_toBottomOf="@+id/triangolo"
+            app:layout_constraintVertical_bias="0.044" />
 
-</GridLayout>
+        <View
+            android:id="@+id/rombo"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/rombo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cerchio"
+            app:layout_constraintVertical_bias="0.283" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
