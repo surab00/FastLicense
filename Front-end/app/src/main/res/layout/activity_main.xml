@@ -8,7 +8,6 @@
     android:background="#F5F5F5"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -22,9 +21,6 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
-
 
     <EditText
         android:id="@+id/editEmail"
